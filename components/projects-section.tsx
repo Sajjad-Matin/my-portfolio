@@ -8,6 +8,7 @@ import codesphere from "../public/projects/code-sphere.png";
 import gamehub from "../public/projects/gamehub.webp";
 import streamify from "../public/projects/streamify.png";
 import webify from "../public/projects/webify.png";
+import bamyan from "../public/projects/bamyanentertainment.png";
 import Link from "next/link";
 
 export default function ProjectsSection() {
@@ -16,6 +17,20 @@ export default function ProjectsSection() {
 
   const projects = [
   {
+    title: "Bamyan Entertainment",
+    description:
+      "Bamyan Entertainment is a dynamic event discovery website that highlights concerts, cultural shows, and entertainment experiences, with features for upcoming event browsing and newsletter subscription to keep audiences informed and engaged.",
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Laravel",
+      "RestAPI",
+      "MySQL",
+    ],
+    image: bamyan,
+    link: 'https://bamyanentertainment.de'
+  },{
     title: "Webify — Software Company Website",
     description:
       "A fully responsive corporate website featuring smooth animations, optimized performance, and a modern brand identity.",
