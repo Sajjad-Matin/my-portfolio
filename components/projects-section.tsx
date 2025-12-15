@@ -60,7 +60,7 @@ export default function ProjectsSection() {
       "A responsive online store with product browsing, cart system, and dynamic user interface.",
     tech: ["React", "Node.js", "Express"],
     image: amazon,
-    link: 'https://e-commerce.com'
+    link: 'https://ecommerce-website-zeta-seven.vercel.app/'
   },
 ];
 
