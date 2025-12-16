@@ -19,7 +19,7 @@ export default function ProjectsSection() {
   {
     title: "Bamyan Entertainment",
     description:
-      "Bamyan Entertainment is a dynamic event discovery website that highlights concerts, cultural shows, and entertainment experiences, with features for upcoming event browsing and newsletter subscription to keep audiences informed and engaged.",
+      "A streamlined event discovery website for concerts and cultural shows, featuring event browsing and newsletter updates.",
     tech: [
       "Next.js",
       "Tailwind CSS",
