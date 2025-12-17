@@ -2,16 +2,16 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { Github, Linkedin, Twitter, Mail, ArrowUp } from "lucide-react"
+import { Github, Linkedin, Twitter, Mail, ArrowUp, MessageCircle } from "lucide-react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
     { icon: Github, href: "https://github.com/sajjad-matin", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/sajjad-matin", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com/sajjad_matin", label: "Twitter" },
-    { icon: Mail, href: "mailto:contact@sajjadmatin.com", label: "Email" },
+    { icon: Linkedin, href: "www.linkedin.com/in/sajjad-matin-mahmodi-4308602b5", label: "LinkedIn" },
+    { icon: MessageCircle, href: "https://wa.me/93744217212", label: "Twitter" },
+    { icon: Mail, href: "mailto:sajjadmatinm@gmail.com", label: "Email" },
   ]
 
   const footerLinks = [

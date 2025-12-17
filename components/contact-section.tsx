@@ -72,17 +72,17 @@ export default function ContactSection() {
     {
       name: "LinkedIn",
       icon: <Linkedin className="w-5 h-5" />,
-      href: "https://linkedin.com",
+      href: "www.linkedin.com/in/sajjad-matin-mahmodi-4308602b5",
     },
     {
       name: "Email",
       icon: <Mail className="w-5 h-5" />,
-      href: "mailto:hello@example.com",
+      href: "mailto:sajjadmatinm@gmail.com",
     },
     {
       name: "WhatsApp",
       icon: <MessageCircle className="w-5 h-5" />,
-      href: "https://wa.me/1234567890",
+      href: "https://wa.me/93744217212",
     },
   ];
 

@@ -1,30 +1,30 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
-import Link from "next/link"
-import { useTheme } from "next-themes"
-import { Moon, Sun } from "lucide-react"
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { useTheme } from "next-themes";
+import { Moon, Sun } from "lucide-react";
 
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const { theme, setTheme, resolvedTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
+  const { theme, setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true)
+    setMounted(true);
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleDarkMode = () => {
-    setTheme(resolvedTheme === "dark" ? "light" : "dark")
-  }
+    setTheme(resolvedTheme === "dark" ? "light" : "dark");
+  };
 
-  if (!mounted) return null
+  if (!mounted) return null;
 
   const navItems = [
     { label: "About", href: "#about" },
@@ -32,7 +32,7 @@ export default function Navbar() {
     { label: "Skills", href: "#skills" },
     { label: "Projects", href: "#projects" },
     { label: "Contact", href: "#contact" },
-  ]
+  ];
 
   return (
     <motion.nav
@@ -89,10 +89,10 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            CV
+            <a href="/MyCV.pdf" download>CV</a>
           </motion.button>
         </div>
       </div>
     </motion.nav>
-  )
+  );
 }

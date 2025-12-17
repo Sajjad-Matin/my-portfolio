@@ -10,74 +10,77 @@ import streamify from "../public/projects/streamify.png";
 import webify from "../public/projects/webify.png";
 import bamyan from "../public/projects/bamyanentertainment.png";
 import Link from "next/link";
+import portfolio from "../public/projects/portfolio.png";
 
 export default function ProjectsSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const projects = [
-  {
-    title: "Bamyan Entertainment",
-    description:
-      "A streamlined event discovery website for concerts and cultural shows, featuring event browsing and newsletter updates.",
-    tech: [
-      "Next.js",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Laravel",
-      "RestAPI",
-      "MySQL",
-    ],
-    image: bamyan,
-    link: 'https://bamyanentertainment.de'
-  },{
-    title: "Webify — Software Company Website",
-    description:
-      "A fully responsive corporate website featuring smooth animations, optimized performance, and a modern brand identity.",
-    tech: [
-      "Next.js",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Node.js",
-      "Express",
-      "PostgreSQL",
-    ],
-    image: webify,
-    link: 'https://webify-software-company.vercel.app/'
-  },
-  {
-    title: "CodeSphere — SaaS Landing Template",
-    description:
-      "A clean and minimal SaaS-style landing page template designed for startups and tech companies.",
-    tech: ["Next.js", "Tailwind CSS"],
-    image: codesphere,
-    link: 'https://code-sphere-eight.vercel.app/'
-  },
-  {
-    title: "GameHub — Game Discovery Platform",
-    description:
-      "A cross-platform web app for discovering games with filtering, search, and API-powered game insights.",
-    tech: ["React.js", "Chakra UI", "Rawg API"],
-    image: gamehub,
-    link: 'https://game-hub-project-hazel.vercel.app/'
-  },
-  {
-    title: "Streamify — Video & Chat Platform",
-    description:
-      "A real-time communication platform supporting video calls, live streaming, and instant messaging.",
-    tech: ["React", "Stream SDK", "Node.js", "Express", "MongoDB"],
-    image: streamify,
-    link: 'https://stream-video-chat.vercel.app/'
-  },
-  {
-    title: "E-Commerce Store",
-    description:
-      "A responsive online store with product browsing, cart system, and dynamic user interface.",
-    tech: ["React", "Node.js", "Express"],
-    image: amazon,
-    link: 'https://ecommerce-website-zeta-seven.vercel.app/'
-  },
-];
+    {
+      title: "Bamyan Entertainment",
+      description:
+        "Bamyan Entertainment is a dynamic event discovery website that highlights concerts, cultural shows, and entertainment experiences, with features for upcoming event browsing and newsletter subscription to keep audiences informed and engaged.",
+      tech: [
+        "Next.js",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Laravel",
+        "RestAPI",
+        "MySQL",
+      ],
+      image: bamyan,
+      link: "https://bamyanentertainment.de",
+    },
+    {
+      title: "Webify — Software Company Website",
+      description:
+        "A fully responsive corporate website featuring smooth animations, optimized performance, and a modern brand identity.",
+      tech: [
+        "Next.js",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+      ],
+      image: webify,
+      link: "https://webify-software-company.vercel.app/",
+    },
+    {
+      title: "3D Interactive Portfolio",
+      description:
+        "A modern, fully responsive personal portfolio with immersive 3D effects, smooth animations, and optimized performance, showcasing a strong and cohesive brand identity.",
+      tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      image: portfolio,
+      link: "https://my-portfolio-six-phi-60.vercel.app/",
+    },
+
+    {
+      title: "CodeSphere — SaaS Landing Template",
+      description:
+        "A clean and minimal SaaS-style landing page template designed for startups and tech companies.",
+      tech: ["Next.js", "Tailwind CSS"],
+      image: codesphere,
+      link: "https://code-sphere-eight.vercel.app/",
+    },
+    {
+      title: "GameHub — Game Discovery Platform",
+      description:
+        "A cross-platform web app for discovering games with filtering, search, and API-powered game insights.",
+      tech: ["React.js", "Chakra UI", "Rawg API"],
+      image: gamehub,
+      link: "https://game-hub-project-hazel.vercel.app/",
+    },
+    {
+      title: "Streamify — Video & Chat Platform",
+      description:
+        "A real-time communication platform supporting video calls, live streaming, and instant messaging.",
+      tech: ["React", "Stream SDK", "Node.js", "Express", "MongoDB"],
+      image: streamify,
+      link: "https://stream-video-chat.vercel.app/",
+    }
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -155,10 +158,10 @@ export default function ProjectsSection() {
 
                     <div className="flex gap-4">
                       <button className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">
-                        <Link href={project.link} target="_blank" >
+                        <Link href={project.link} target="_blank">
                           View Project
                         </Link>
-                      </button> 
+                      </button>
                     </div>
                   </div>
                 </div>
