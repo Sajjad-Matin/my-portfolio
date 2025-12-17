@@ -53,7 +53,7 @@ export default function ProjectsSection() {
         "A modern, fully responsive personal portfolio with immersive 3D effects, smooth animations, and optimized performance, showcasing a strong and cohesive brand identity.",
       tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
       image: portfolio,
-      link: "https://my-portfolio-six-phi-60.vercel.app/",
+      link: "https://safiqullah-ebadi.vercel.app/",
     },
 
     {
