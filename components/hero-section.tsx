@@ -56,10 +56,10 @@ export default function HeroSection() {
               👋 Welcome to my portfolio
             </motion.div>
             <motion.h1
-              className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-900 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent leading-tight"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-900 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent leading-tight"
               variants={itemVariants}
             >
-              Full-Stack Developer
+              Full-Stack Developer building AI-powered applications
             </motion.h1>
             <motion.div
               className="h-1.5 w-24 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 rounded-full"
@@ -73,8 +73,9 @@ export default function HeroSection() {
             variants={itemVariants}
           >
             I build modern, scalable web applications using React, Next.js,
-            Node.js, Express.js and PostgreSQL. Passionate about crafting
-            elegant solutions to complex problems.
+            Node.js, and PostgreSQL. Focusing on integrating
+            AI into real-world products — working with APIs, LLMs, and backend
+            systems to create practical, AI-powered applications.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -102,7 +103,7 @@ export default function HeroSection() {
             variants={itemVariants}
           >
             {[
-              { label: "Projects", value: "10+" },
+              { label: "Projects", value: "15+" },
               { label: "Experience", value: "2+" },
               { label: "Technologies", value: "20+" },
             ].map((stat, i) => (

@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
-import Image from "next/image"
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import Image from "next/image";
 
 export default function AboutSection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -16,21 +16,27 @@ export default function AboutSection() {
         staggerChildren: 0.2,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  }
+  };
 
   const stats = [
     { label: "2+ Years Experience", value: "Professional Developer" },
-    { label: "10+ Projects Completed", value: "Full-Stack Solutions" },
-    { label: "React • Next.js • Node • Express • PostgreSQL", value: "Tech Stack" },
-  ]
+    { label: "15+ Projects Completed", value: "Full-Stack Solutions" },
+    {
+      label: "React • Next.js • Node.js • Express • Nest.js • PostgreSQL • AI Integration & LLMs",
+      value: "Tech Stack",
+    },
+  ];
 
   return (
-    <section id="about" className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section
+      id="about"
+      className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+    >
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}
@@ -43,12 +49,12 @@ export default function AboutSection() {
           <motion.div className="relative group" variants={itemVariants}>
             {/* Glowing background effect */}
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-[2.5rem] blur-2xl opacity-20 group-hover:opacity-40 transition duration-500" />
-            
+
             <div className="relative aspect-square rounded-[2.5rem] overflow-hidden border border-white/20 shadow-2xl bg-slate-900/50 backdrop-blur-sm">
-              <Image 
-                src="/IMG_8951.jpg" 
-                alt="Sajjad Matin" 
-                fill 
+              <Image
+                src="/IMG_8951.jpg"
+                alt="Sajjad Matin"
+                fill
                 className="object-cover object-top transition-transform duration-700 group-hover:scale-110"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
@@ -61,23 +67,37 @@ export default function AboutSection() {
             <motion.div variants={itemVariants}>
               <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                I'm a passionate full-stack developer with a deep interest in building scalable, modern web
-                applications. With expertise in React, Next.js, and Node.js, I create elegant solutions that solve
-                real-world problems.
+                I'm a passionate full-stack developer specializing in building
+                modern, scalable web applications powered by AI. I love creating
+                practical, intelligent solutions that solve real-world problems
+                — from dynamic frontend experiences with React and Next.js to
+                robust backend systems with Node.js, Express, and PostgreSQL. My
+                focus is on integrating AI, APIs, and LLMs to turn ideas into
+                real, impactful applications.
               </p>
             </motion.div>
 
             {/* Stats Grid */}
-            <motion.div className="grid grid-cols-1 gap-6" variants={containerVariants}>
+            <motion.div
+              className="grid grid-cols-1 gap-6"
+              variants={containerVariants}
+            >
               {stats.map((stat, i) => (
                 <motion.div
                   key={i}
                   className="p-4 rounded-xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-500 transition-all"
                   variants={itemVariants}
-                  whileHover={{ y: -4, boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}
+                  whileHover={{
+                    y: -4,
+                    boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+                  }}
                 >
-                  <p className="font-semibold text-blue-600 dark:text-blue-400">{stat.label}</p>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">{stat.value}</p>
+                  <p className="font-semibold text-blue-600 dark:text-blue-400">
+                    {stat.label}
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">
+                    {stat.value}
+                  </p>
                 </motion.div>
               ))}
             </motion.div>
@@ -85,5 +105,5 @@ export default function AboutSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
