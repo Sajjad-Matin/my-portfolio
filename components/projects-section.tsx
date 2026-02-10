@@ -11,12 +11,29 @@ import webify from "../public/projects/webify.png";
 import bamyan from "../public/projects/bamyanentertainment.png";
 import Link from "next/link";
 import portfolio from "../public/projects/portfolio.png";
+import edulearn from "../public/projects/edulearn.png"
 
 export default function ProjectsSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const projects = [
+    {
+      title: "EduLearn – Online Learning Platform",
+      description:
+        "EduLearn is a responsive online learning platform built to provide a smooth and interactive experience for students. I developed both the frontend and backend, integrating RESTful APIs, a MySQL database, and HesabPay for seamless payment processing.",
+      tech: [
+        "React.js",
+        "Chakra UI",
+        "Framer Motion",
+        "Laravel",
+        "RestAPI",
+        "MySQL",
+        "HesabPay"
+      ],
+      image: edulearn,
+      link: "https://edulearn-academy.vercel.app",
+    },
     {
       title: "Bamyan Entertainment",
       description:
@@ -28,6 +45,7 @@ export default function ProjectsSection() {
         "Laravel",
         "RestAPI",
         "MySQL",
+        "Stripe Payment"
       ],
       image: bamyan,
       link: "https://bamyanentertainment.de",
