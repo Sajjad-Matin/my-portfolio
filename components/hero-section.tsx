@@ -91,7 +91,7 @@ export default function HeroSection() {
               View Projects
             </MagneticButton>
             <MagneticButton variant="secondary">
-              <a href="/MyCV.pdf" download>
+              <a href="/sajjad-matin-mahmodi.pdf" download>
                 Download CV
               </a>
             </MagneticButton>

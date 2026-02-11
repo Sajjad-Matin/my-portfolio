@@ -89,7 +89,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <a href="/MyCV.pdf" download>CV</a>
+            <a href="/sajjad-matin-mahmodi.pdf" download>CV</a>
           </motion.button>
         </div>
       </div>
