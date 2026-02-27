@@ -14,7 +14,7 @@ export default function SkillsSection() {
     },
     {
       category: "Backend",
-      skills: ["Node.js", "NestJS", "Express.js", "Rest APIs", "Microservices"],
+      skills: ["Node.js", "NestJS", "Express.js", "Rest APIs", "Microservices", ".Net"],
     },
     {
       category: "Data Base & Storage",
