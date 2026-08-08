@@ -104,7 +104,7 @@ export default function HeroSection() {
           >
             {[
               { label: "Projects", value: "15+" },
-              { label: "Experience", value: "2+" },
+              { label: "Experience", value: "4+" },
               { label: "Technologies", value: "20+" },
             ].map((stat, i) => (
               <motion.div key={i} whileHover={{ y: -5 }}>

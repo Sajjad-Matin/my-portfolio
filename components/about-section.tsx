@@ -24,7 +24,7 @@ export default function AboutSection() {
   };
 
   const stats = [
-    { label: "2+ Years Experience", value: "Professional Developer" },
+    { label: "4+ Years Experience", value: "Professional Developer" },
     { label: "15+ Projects Completed", value: "Full-Stack Solutions" },
     {
       label: "React • Next.js • Node.js • Express • Nest.js • PostgreSQL • AI Integration & LLMs",
