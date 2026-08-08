@@ -3,7 +3,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
-import amazon from "../public/projects/amazonproject.webp";
 import codesphere from "../public/projects/code-sphere.png";
 import gamehub from "../public/projects/gamehub.webp";
 import streamify from "../public/projects/streamify.png";
@@ -12,6 +11,7 @@ import bamyan from "../public/projects/bamyanentertainment.png";
 import Link from "next/link";
 import portfolio from "../public/projects/portfolio.png";
 import edulearn from "../public/projects/edulearn.png"
+import rems from "../public/projects/rems.png"
 
 export default function ProjectsSection() {
   const ref = useRef(null);
@@ -19,11 +19,26 @@ export default function ProjectsSection() {
 
   const projects = [
     {
+      title: "Real Estate Management System",
+      description:
+        "A production-oriented full-stack real estate management platform designed to centralize and streamline property management operations through a secure, scalable, and maintainable architecture.",
+      tech: [
+        "React.js + TypeScript",
+        "Tailwind CSS",
+        "NestJS",
+        "RestAPI",
+        "PostgreSQL",
+        "Prisma"
+      ],
+      image: rems,
+      link: "https://real-estate-management-system-wt9t.vercel.app",
+    },
+    {
       title: "EduLearn – Online Learning Platform",
       description:
         "EduLearn is a responsive online learning platform built to provide a smooth and interactive experience for students. I developed both the frontend and backend, integrating RESTful APIs, a MySQL database, and HesabPay for seamless payment processing.",
       tech: [
-        "React.js",
+        "React.js + TypeScript",
         "Chakra UI",
         "Framer Motion",
         "Laravel",
